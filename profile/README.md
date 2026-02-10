@@ -1,1 +1,1 @@
-A collection of repositories to collect all available resources for Turkic Languages.
+A collection of repositories to have all available resources for Turkic Languages in one place
