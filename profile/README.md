@@ -18,12 +18,14 @@
 If you use TurkicNLP in your research, please cite:
 
 ```bibtex
-@software{turkicnlp,
-  title = {TurkicNLP: An Open-Source NLP Toolkit for Turkic Languages},
-  author = {Sherzod Hakimov},
-  year = {2026},
-  url = {https://github.com/turkic-nlp/turkicnlp},
-  license = {Apache-2.0},
+@misc{hakimov2026turkicnlpnlptoolkit,
+      title={TurkicNLP: An NLP Toolkit for Turkic Languages}, 
+      author={Sherzod Hakimov},
+      year={2026},
+      eprint={2602.19174},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2602.19174}, 
 }
 ```
 
@@ -36,6 +38,14 @@ If you use TurkicNLP in your research, please cite:
 - **Universal dependencies integration** — pretrained tokenization, POS tagging, lemmatization, dependency parsing, and NER
 - **Pretrained embeddings + translation backend** — get vectors for sentences and translate across many languages
 - **License** - Apache-2.0
+
+## Supported Languages and Components
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Turkic_Languages_distribution_map.png" alt="Distribution map of Turkic languages" width="700">
+  <br>
+  <em>Geographic distribution of Turkic languages (source: <a href="https://commons.wikimedia.org/wiki/File:Turkic_Languages_distribution_map.png">Wikimedia Commons</a>)</em>
+</p>
 
 ## Open-source Library
 
@@ -61,7 +71,6 @@ With optional dependencies:
 
 ```bash
 pip install "turkicnlp[stanza]"        # Stanza/UD neural models
-pip install "turkicnlp[nllb]"          # NLLB embeddings and translation backend (transformers, tokenizer libraries)
 pip install "turkicnlp[all]"           # Everything: stanza, NLLB embeddings & translations
 pip install "turkicnlp[dev]"           # Development tools
 ```
