@@ -1,79 +1,63 @@
 <p align="center">
-  <strong>NLP toolkit for 20+ Turkic languages</strong> — a pip-installable open-source Python library with adaptations for the low-resource, morphologically rich Turkic language family.
+  <img src="https://sherzod-hakimov.github.io/images/cover.png" alt="TurkicNLP" width="180">
+</p>
+
+<h1 align="center">TurkicNLP</h1>
+
+<p align="center">
+  <b>Open-source NLP toolkit for 24 Turkic languages</b><br>
+  From Turkish to Sakha, Kazakh to Uyghur — tokenization, morphology, POS tagging, dependency parsing, NER, transliteration, embeddings, and machine translation in one <code>pip install</code>.
 </p>
 
 <p align="center">
-  Maintained by <a href="https://sherzod-hakimov.github.io/">Sherzod Hakimov</a>
+  <a href="https://arxiv.org/abs/2602.19174"><img src="https://img.shields.io/badge/arXiv-2602.19174-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://github.com/turkic-nlp/turkicnlp"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>
+  <img src="https://img.shields.io/badge/languages-24_Turkic-green.svg" alt="24 Languages">
+  <img src="https://img.shields.io/badge/scripts-Latin_%7C_Cyrillic_%7C_Arabic_%7C_Runic-purple.svg" alt="4 Script Families">
 </p>
 
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache-2.0"></a>
-  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python 3.9+"></a>
-  <img src="https://img.shields.io/badge/status-pre--alpha-orange.svg" alt="Status: Pre-Alpha">
-  <img src="https://img.shields.io/badge/languages-24_Turkic-green.svg" alt="24 Turkic Languages">
-</p>
+---
 
-## Citation
+**Why TurkicNLP?** Over 200 million people speak a Turkic language, yet most lack basic NLP tools. TurkicNLP bridges this gap with a unified Python library covering 6 language branches — Oghuz, Kipchak, Karluk, Siberian, Oghur, and Arghu — plus historical languages like Ottoman Turkish and Old Turkic runic inscriptions.
 
-If you use TurkicNLP in your research, please cite:
+### Highlights
 
-```bibtex
-@misc{hakimov2026turkicnlpnlptoolkit,
-      title={TurkicNLP: An NLP Toolkit for Turkic Languages}, 
-      author={Sherzod Hakimov},
-      year={2026},
-      eprint={2602.19174},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2602.19174}, 
-}
-```
+- **Morphological analysis** via rule-based FSTs (~20 languages) and neural models (21 languages)
+- **Multi-script support** — automatic detection and bidirectional transliteration (Cyrillic ↔ Latin, Arabic ↔ Latin, Runic → Latin)
+- **Neural pipelines** — POS tagging, lemmatization, dependency parsing, and NER models
+- **Embeddings & translation** — sentence vectors and machine translation
+- **Morpheme tokenizer** — hybrid neural+FST segmentation with labeled morphemes for 16 languages
 
-## Features
+### Quick start
 
-- **24 Turkic languages** from Turkish to Sakha, Kazakh to Uyghur
-- **Script-aware from the ground up** — Latin, Cyrillic, Perso-Arabic, Old Turkic Runic
-- **Automatic script detection** and bidirectional transliteration
-- **Morphology analyser** for ~20 Turkic languages
-- **Universal dependencies integration** — pretrained tokenization, POS tagging, lemmatization, dependency parsing, and NER
-- **Pretrained embeddings + translation backend** — get vectors for sentences and translate across many languages
-- **License** - Apache-2.0
-
-## Supported Languages and Components
-
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Turkic_Languages_distribution_map.png" alt="Distribution map of Turkic languages" width="700">
-  <br>
-  <em>Geographic distribution of Turkic languages (source: <a href="https://commons.wikimedia.org/wiki/File:Turkic_Languages_distribution_map.png">Wikimedia Commons</a>)</em>
-</p>
-
-## Open-source Library
-
-[https://github.com/turkic-nlp/turkicnlp](https://github.com/turkic-nlp/turkicnlp)
-
-## Code Samples
-
-[https://github.com/turkic-nlp/turkic-nlp-code-samples](https://github.com/turkic-nlp/turkic-nlp-code-samples)
-
-
-## Installation
-
-```bash
-pip install turkicnlp
-```
-
-To install all required dependencies at once:
 ```bash
 pip install "turkicnlp[all]"
 ```
 
-With optional dependencies:
-
-```bash
-pip install "turkicnlp[stanza]"        # Stanza/UD neural models
-pip install "turkicnlp[all]"           # Everything: stanza, NLLB embeddings & translations
-pip install "turkicnlp[dev]"           # Development tools
+```python
+import turkicnlp
+turkicnlp.download("kaz")
+nlp = turkicnlp.Pipeline("kaz", processors=["tokenize", "pos", "lemma", "depparse"])
+doc = nlp("Мен мектепке бардым")
 ```
 
-## More info 
-[https://turkic-nlp.github.io/](https://turkic-nlp.github.io/)
+### Explore
+
+| | |
+|---|---|
+| **Library** | [turkic-nlp/turkicnlp](https://github.com/turkic-nlp/turkicnlp) |
+| **Code samples** | [turkic-nlp/turkic-nlp-code-samples](https://github.com/turkic-nlp/turkic-nlp-code-samples) |
+| **Paper** | [arXiv:2602.19174](https://arxiv.org/abs/2602.19174) |
+| **Website** | [turkic-nlp.github.io](https://turkic-nlp.github.io/) |
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Turkic_Languages_distribution_map.png" alt="Turkic languages map" width="600">
+  <br>
+  <em>Turkic languages span from Turkey to Siberia, China to the Balkans</em>
+</p>
+
+---
+
+<p align="center">
+  Maintained by <a href="https://sherzod-hakimov.github.io/">Sherzod Hakimov</a> · Contributions welcome
+</p>
