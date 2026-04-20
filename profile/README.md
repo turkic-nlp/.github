@@ -49,6 +49,8 @@ doc = nlp("Мен мектепке бардым")
 | **Code samples** | [turkic-nlp/turkic-nlp-code-samples](https://github.com/turkic-nlp/turkic-nlp-code-samples) |
 | **Paper** | [arXiv:2602.19174](https://arxiv.org/abs/2602.19174) |
 | **Website** | [turkic-nlp.github.io](https://turkic-nlp.github.io/) |
+| **Community & communication** | [TurkicNLP Discord ](https://discord.gg/EMzAY8kE) |
+| **Datasets & models** | [🤗 HuggingFace](https://huggingface.co/turkicnlp) |
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Turkic_Languages_distribution_map.png" alt="Turkic languages map" width="600">
