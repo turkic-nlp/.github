@@ -49,7 +49,7 @@ doc = nlp("Мен мектепке бардым")
 | **Code samples** | [turkic-nlp/turkic-nlp-code-samples](https://github.com/turkic-nlp/turkic-nlp-code-samples) |
 | **Paper** | [arXiv:2602.19174](https://arxiv.org/abs/2602.19174) |
 | **Website** | [turkic-nlp.github.io](https://turkic-nlp.github.io/) |
-| **Community & communication** | [TurkicNLP Discord ](https://discord.gg/EMzAY8kE) |
+| **Community & communication** | [TurkicNLP Discord ](https://discord.gg/CeVTbGpmMQ) |
 | **Datasets & models** | [🤗 HuggingFace](https://huggingface.co/turkicnlp) |
 
 <p align="center">
