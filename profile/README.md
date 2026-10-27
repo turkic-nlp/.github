@@ -46,6 +46,7 @@ doc = nlp("Мен мектепке бардым")
 | | |
 |---|---|
 | **Library** | [turkic-nlp/turkicnlp](https://github.com/turkic-nlp/turkicnlp) |
+| **Book** | [NLP across Turkic Languages (Draft)](https://github.com/turkic-nlp/book) |
 | **Code samples** | [turkic-nlp/turkic-nlp-code-samples](https://github.com/turkic-nlp/turkic-nlp-code-samples) |
 | **Paper** | [arXiv:2602.19174](https://arxiv.org/abs/2602.19174) |
 | **Website** | [turkic-nlp.github.io](https://turkic-nlp.github.io/) |
